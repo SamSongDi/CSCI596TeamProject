@@ -9,6 +9,18 @@ HUibin Zhou (huibinzh@usc.edu)
 
 Xinzhou Su (xinzhous@usc.edu )
 
-## Concept
+## Goal (What's the "big" problem? Why important?)
 
 ![Concept](Figures/Concept.png)
+
+## Scientific objectives
+
+## Previous work
+
+## Potential techniques to use
+
+## Expected results
+
+### Preliminary results
+
+### What's the our next step?
