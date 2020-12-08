@@ -23,4 +23,9 @@ Xinzhou Su (xinzhous@usc.edu )
 
 ### Preliminary results
 
+![FixedScaling](Figures/CPU_turbulenceRealization_fixed.png)
+
+![IsoScaling](Figures/CPU_turbulenceRealization_isogranular.png)
+
 ### What's the our next step?
+
