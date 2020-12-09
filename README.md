@@ -18,7 +18,7 @@ To investigate the dynamic and random turbulence effects on the transmitted mult
 
 In this project, we will show how to apply parallel programming techniques in the simulation of optical beam propagation through atmospheric turbulence. In the following contents, several potential techniques are described: 1) simulation model for turbulence using multiple random phase plates, 2) using OpenMP to simulate the turbulence effects on optical beams with different parameters, and 3) using GPU accelerated CUDA to simulate the fast Fourier transform (FFT) algorithm for the free-space beam propagation.
 
-![Concept](Figures/Concept.png)
+![Concept](Figures/concept1.png)
 
 ## Scientific objectives
 
