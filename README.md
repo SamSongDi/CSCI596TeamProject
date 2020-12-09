@@ -81,7 +81,7 @@ Futhermore, we also evaulate the scaling performance.
 
 ![IsoScaling](Figures/CPU_turbulenceRealization_isogranular.png)
 
-### What's the our next step?
+### What's our next step?
 
 In the future, we would:
 
