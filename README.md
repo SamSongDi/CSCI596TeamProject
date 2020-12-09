@@ -40,17 +40,17 @@ Simulation model and parallel programing techniques used in simulating turbulenc
 
 To study the influence of atmospheric turbulence on optical beams, we first build a model to emulate the turbulence. According to Kolmogorov turbulence theory, the refractive index fluctuation caused by atmospheric turbulence can be described by a structure function Dn, which is determined by
 
-Dn(Δr)=6.88(Δr/r0)5/3
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= D_n(%5CDelta%20r)%3D6.88(%5CDelta%20r%2Fr_0)%5E%7B5%2F3%7D" style="border:none;">
 
 where Δr is the distance between two points in space, and r0 is the Fried parameter, or the coherence length. Assuming the value of Cn2 keeps unchanged over propagation path, r0 can be calculated from the atmospheric structure constant Cn2 by the formula
 
-r0=(0.423k2Cn2L)-3/5
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= r_0%3D(0.423k%5E2C_n%5E2L)%5E%7B-3%2F5%7D" style="border:none;">
 
 where k=2/f is the wave number and L is the propagation length.
 
 Based on the above equations, the turbulence can be simulated by using phase plates, which can be described as N-by-N matrices of random phase numbers with statistics that match Kolmogorov turbulence theory. The simulation model is shown in the figure. The input optical signal with single wavelength and single spatial mode is applied by the phase changes on each pixel defined by the phase plates. The phase plates are generated according to the abovementioned Kolmogorov theory to emulate the atmospheric turbulence. After certain amount of phase plates, an output beam is generated as the beam with the turbulence effect. The beam propagation is modeled with the Fourier transform-based method by
 
-Eout=F-1{F{Ein}·H(λ,z)}
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= E_%7Bout%7D%3DF%5E%7B-1%7D%5C%7BF%5C%7BE_%7Bin%7D%5C%7D%5Ccdot%20H(%5Clambda%2Cz)%5C%7D" style="border:none;">
 
 where Ein and Eout are the electrical fields of the beam before and after propagation. F-1 and F denote the inverse Fourier and Fourier transforms. H(λ,z) is the spectral transfer function of the propagation as a function of the wavelength λ and the propagation distance z.
 
