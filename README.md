@@ -1,4 +1,4 @@
-# Study of parallel computing techniques for simulation optical beam propagation in atmospheric turbulence
+# Study of parallel computing techniques for simulating optical beam propagation in atmospheric turbulence
 ## Team members
 
 Hao Song (songhao@usc.edu)
@@ -60,9 +60,33 @@ In such a simulation model, there are several places that different parallel pro
 
 ### Preliminary results
 
+As a start, we simulate a Gaussian beam propagating through a single phase plate. We change the turbulence realization and do the statistics of the received Gaussian power at the reciever.
+
+![FixedScaling](Figures/statistics.png)
+
+Below are some parameters of the model.
+
+Items | Values |
+--- | --- |
+Beam waist | 5 mm |
+Wavelength  | 1550 nm |
+Propagating distance  | 10 m |
+Fried parameter of turbulence  | 1.0 mm |
+Number of turbulence realization | 10000 |
+Number of threads | 32 |
+
+Futhermore, we also evaulate the scaling performance.
+
 ![FixedScaling](Figures/CPU_turbulenceRealization_fixed.png)
 
 ![IsoScaling](Figures/CPU_turbulenceRealization_isogranular.png)
 
 ### What's the our next step?
 
+In the future, we would:
+
+1. investigate other parallel computing techniques including CUDA to speed up the out simulation.
+
+2. investigate the feasibility of different techniques for different sub-problems. For instance, we could use CUDA to speed up the FFT computation.
+
+3. study the scalability of the proposed techniques for different scenerios. For example, we could use hybrid openMP and CUDA techniques for simulating the turbulence effect on different spatial modes.
