@@ -60,13 +60,13 @@ In such a simulation model, there are several places that different parallel pro
 
 ### Preliminary results
 
-As a start, we simulate a Gaussian beam propagating through a single phase plate. We change the turbulence realization and do the statistics of the received Gaussian power at the reciever.
+As a start, we simulate a Gaussian beam propagating through a single phase plate. We change the turbulence realizations and process the statistics of the received Gaussian power at the reciever (i.e., count the number of the cases when the received ratio power is in the certain range).
 
 ![FixedScaling](Figures/statistics.png)
 
 Below are some parameters of the model.
 
-Items | Values |
+Parameters | Values |
 --- | --- |
 Beam waist | 5 mm |
 Wavelength  | 1550 nm |
