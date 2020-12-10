@@ -40,7 +40,14 @@ Adjust the code to maximize the efficiency under different conditions.
 
 ## Previous work
 
-Optical turbulence in the atmosphere is a result of random, spatially varying fluctuations in the air temperature. The widely accepted Kolmogorov model for these fluctuations relates these temperature fluctuations to refractive index fluctuations. When a laser beam propagates through these random regions (called cells), it is aberrated, leading to wavefront distortions and intensity fluctuations. Two boundary values specify the average size of these turbulent cells: the inner scale, l0, which is on the order of millimeters, and the outer scale, L0, which is on the order of meters (typically twice the height of a link above the ground if that is less than about 100 m)
+Optical turbulence in the atmosphere is a result of variation of local temperature, pressure, or humidity in the atmosphere. The widely accepted Kolmogorov model for these fluctuations relates these temperature fluctuations to refractive index fluctuations. After propagation through the turbulent atmosphere, the wavefront of the transmitted laser beams will be distorted.
+
+Multiplexing of many independent data-carrying beams in the form of space-division-multiplexing (SDM) is important for enabling an increase in system capacity for point-to-point optical wireless communication links. One type of orthogonal modal basis set is orbital-angular-momentum (OAM). A beam that carries OAM has: (a) a phasefront that “twists” in the azimuthal direction as it propagates, (b) an OAM l value that is the number of 2π phase shifts in the azimuthal direction, and (c) an intensity profile that is a ring-shaped vortex. Different OAM beams could be efficiently multiplexed and demultiplexed with inherently low crosstalk. However, atmospheric turbulence would destort the phase distribution of the beams, and induce modal coupling to other OAM modes and increase the channel crosstalk. Such crosstalk would influence the orthogonality of different communication channels and influence the channel performence.
+
+![Model](Figures/tur_spectrum.png)
+
+Above figure shows previous experimental results about modal spectrum of OAM beams through the turbulence with different strength. The normalized average powers for l=0 (upper) and l=3 (lower) under different emulated turbulence conditions are plotted. A single phase plate follows Kolmogorov distribution is used emulate an equivalent 1 km long real atmospheric link. We can see that the majority of the power is still in the transmitted OAM mode under weak turbulence but it spreads to neighboring modes as the turbulence strength increases. Same measurement statistics of the turbulence are also used to evaluate the influence of mode order dependence. As the divergence of OAM mode is directly related to l, the size of the beam incident on the phase screen plate is larger for OAM l 3, indicating that it will experience stronger turbulence distortions.
+
 
 
 ## Potential techniques to use
