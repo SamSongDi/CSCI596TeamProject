@@ -40,6 +40,9 @@ Adjust the code to maximize the efficiency under different conditions.
 
 ## Previous work
 
+Optical turbulence in the atmosphere is a result of random, spatially varying fluctuations in the air temperature. The widely accepted Kolmogorov model for these fluctuations relates these temperature fluctuations to refractive index fluctuations. When a laser beam propagates through these random regions (called cells), it is aberrated, leading to wavefront distortions and intensity fluctuations. Two boundary values specify the average size of these turbulent cells: the inner scale, l0, which is on the order of millimeters, and the outer scale, L0, which is on the order of meters (typically twice the height of a link above the ground if that is less than about 100 m)
+
+
 ## Potential techniques to use
 
 ![Model](Figures/model.png)
